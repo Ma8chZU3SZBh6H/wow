@@ -25,17 +25,21 @@ module.exports = {
                 '18px': '18px',
                 '24px': '24px',
                 '32px': '32px',
+                '38px': '38px',
                 '58px': '58px',
                 '72px': '72px',
             },
             backgroundImage: {
-                menuImg: "url('/nav/cubesRight.svg'), url('/nav/cubesLeft.svg')"
+                menuImg: "url('/nav/cubesRight.svg'), url('/nav/cubesLeft.svg')",
+                headerImg: "url('/home/header/cubes.svg')"
             },
             backgroundPosition: {
-                menuPos: 'bottom right, bottom left'
+                menuPos: 'bottom right, bottom left',
+                headerPos: 'bottom right'
             },
             backgroundSize: {
-                menuSize: '33%, 33%'
+                menuSize: '33%, 33%',
+
             }
         },
     },
