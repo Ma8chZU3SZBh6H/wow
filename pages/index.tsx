@@ -1,14 +1,14 @@
 import type {NextPage} from 'next'
-import Nav from "../components/Nav";
-import Header from "../components/Home/Header";
-import Partners from "../components/Home/Partners";
-import Why from "../components/Home/Why";
-import How from "../components/Home/How";
-import SectionWithImgAndText from "../components/Home/components/SectionWithImgAndText";
-import DustText from "../components/Home/components/DustText";
+import Nav from "../segments/Nav";
+import Header from "../segments/Home/Header";
+import Partners from "../segments/Home/Partner";
+import Why from "../segments/Home/Why";
+import How from "../segments/Home/How";
+import SectionWithImgAndText from "../components/home/SectionWithImgAndText";
+import DustText from "../components/home/DustText";
 import React from "react";
-import SectionTitleWithCube from "../components/Home/components/SectionTitleWithCube";
-import CheckedTitle from "../components/Home/Security/components/CheckedTitle";
+import SectionTitleWithCube from "../components/home/SectionTitleWithCube";
+import CheckedTitle from "../components/home/Security/CheckedTitle";
 
 const Home: NextPage = () => {
     return (

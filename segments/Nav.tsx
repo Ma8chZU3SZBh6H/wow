@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import Link from "next/link";
-import BtnNotification from "./components/BtnNotification";
-import Socials from "../Socials";
+import BtnNotification from "../components/Nav/BtnNotification";
+import Socials from "../components/Socials";
 
 const menus = [
     {
-        title: 'Index Blank',
+        title: 'Partner Blank',
         href: '/'
     },
     {
