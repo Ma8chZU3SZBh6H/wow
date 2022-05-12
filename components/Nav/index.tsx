@@ -5,7 +5,7 @@ import Socials from "../Socials";
 
 const menus = [
     {
-        title: 'Why Blank',
+        title: 'Index Blank',
         href: '/'
     },
     {

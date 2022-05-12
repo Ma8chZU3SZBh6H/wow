@@ -1,8 +1,8 @@
 import React from 'react';
 import Socials from "../../Socials";
-import CubeTitle from "../components/CubeTitle";
 import DustText from "../components/DustText";
 import Section from "../components/Section";
+import SectionTitleWithCube from "../components/SectionTitleWithCube";
 
 function Header() {
     return (
@@ -12,11 +12,8 @@ function Header() {
                 <Socials/>
             </div>
             <div className='flex flex-col md:gap-12 gap-6  '>
-                <div className='flex flex-col gap-8'>
-                    <CubeTitle>THE MOST PRIVATE, NON-CUSTODIAL ETHEREUM WALLET</CubeTitle>
-                    <h1 className='md:text-72px text-38px font-extrabold'>Reclaim privacy on your Ethereum
-                        transfers</h1>
-                </div>
+                <SectionTitleWithCube cube='THE MOST PRIVATE, NON-CUSTODIAL ETHEREUM WALLET'
+                                      title='Reclaim privacy on your Ethereum transfers'/>
                 <DustText>
                     CoinX hides your financial data by mixing
                     transfers with

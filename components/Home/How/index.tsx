@@ -1,7 +1,6 @@
 import React from 'react';
-import CubeTitle from "../components/CubeTitle";
-import SectionTitle from "../components/SectionTitle";
 import Section from "../components/Section";
+import SectionTitleWithCube from "../components/SectionTitleWithCube";
 
 const adventages = [
     {
@@ -29,10 +28,8 @@ function Index({}: {}) {
         <Section className='flex flex-col md:gap-12 gap-6'>
             <div className='grid grid-cols-[minmax(208.5px,1fr)_auto_1fr] gap-8 items-end'>
                 <img className='pb-2 lg:block hidden ' src='/home/how/arrow.svg' alt=''/>
-                <div className='flex-col flex lg:items-center md:gap-6 gap-4'>
-                    <CubeTitle>WHAT BLANK DOES</CubeTitle>
-                    <SectionTitle className='whitespace-nowrap'>Hide it all. Go CoinX.</SectionTitle>
-                </div>
+                <SectionTitleWithCube cube='WHAT BLANK DOES' title='Hide it all. Go CoinX.' noWrap={true}
+                                      center={true}/>
                 <div></div>
             </div>
             <div className='grid lg:grid-cols-3 grid-cols-1 lg:gap-6 md:gap-5 gap-4  '>
