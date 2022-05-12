@@ -1,6 +1,6 @@
 import React from 'react';
-import Section from "../../components/home/Section";
-import SectionTitleWithCube from "../../components/home/SectionTitleWithCube";
+import Section from "../../components/Home/Section";
+import SectionTitleWithCube from "../../components/Home/SectionTitleWithCube";
 
 const adventages = [
     {

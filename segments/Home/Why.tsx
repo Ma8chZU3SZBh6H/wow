@@ -1,7 +1,7 @@
 import React from 'react';
-import DustText from "../../components/home/DustText";
-import SectionWithImgAndText from "../../components/home/SectionWithImgAndText";
-import SectionTitleWithCube from "../../components/home/SectionTitleWithCube";
+import DustText from "../../components/Home/DustText";
+import SectionWithImgAndText from "../../components/Home/SectionWithImgAndText";
+import SectionTitleWithCube from "../../components/Home/SectionTitleWithCube";
 
 function Why() {
     return (

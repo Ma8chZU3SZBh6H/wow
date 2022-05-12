@@ -1,8 +1,8 @@
 import React from 'react';
-import SectionTitleWithCube from "../../components/home/SectionTitleWithCube";
-import DustText from "../../components/home/DustText";
-import CheckedTitle from "../../components/home/CheckedTitle";
-import SectionWithImgAndText from "../../components/home/SectionWithImgAndText";
+import SectionTitleWithCube from "../../components/Home/SectionTitleWithCube";
+import DustText from "../../components/Home/DustText";
+import CheckedTitle from "../../components/Home/CheckedTitle";
+import SectionWithImgAndText from "../../components/Home/SectionWithImgAndText";
 
 function Privacy() {
     return (

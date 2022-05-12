@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from "../../components/home/Section";
+import Section from "../../components/Home/Section";
 
 const partners = [
     '/home/partners/fast.svg',
