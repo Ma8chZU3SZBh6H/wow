@@ -1,8 +1,8 @@
 import React from 'react';
 
-function DustText({children}: { children: string }) {
+function DustText({children, dark}: { children: string, dark?: boolean }) {
     return (
-        <h2 className='text-18px text-blue-dust font-normal '>{children}</h2>
+        <h2 className={`text-18px font-normal ${dark ? 'text-grey-dust' : 'text-blue-dust'}`}>{children}</h2>
     );
 }
 

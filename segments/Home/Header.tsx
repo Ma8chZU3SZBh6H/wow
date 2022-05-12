@@ -1,8 +1,10 @@
 import React from 'react';
 import Socials from "../../components/Socials";
-import DustText from "../../components/home/DustText";
-import Section from "../../components/home/Section";
-import SectionTitleWithCube from "../../components/home/SectionTitleWithCube";
+import Section from "../../components/Home/Section";
+import SectionTitleWithCube from "../../components/Home/SectionTitleWithCube";
+import DustText from "../../components/Home/DustText";
+import BtnBlue from "../../components/Home/BtnBlue";
+import BtnWhite from "../../components/Home/BtnWhite";
 
 function Header() {
     return (
@@ -22,19 +24,9 @@ function Header() {
                     ensuring that outward transfers remain anonymous. Your privacy level only goes up with each
                     additional transfer inside.
                 </DustText>
-                <div className='flex gap-6 md:flex-row flex-col'>
-                    <button
-                        className='whitespace-nowrap text-12px font-extrabold text-white bg-blue-water px-6 py-4 rounded flex gap-16 justify-between'>REQUEST
-                        EARLY
-                        ACCESS
-                        <img src='/home/header/arrowWhite.svg' alt=''/>
-                    </button>
-                    <button
-                        className='whitespace-nowrap text-12px font-extrabold text-blacky-black border-2 border-blacky-black bg-blue-sky px-6 py-4 rounded flex gap-16 justify-between'>REQUEST
-                        EARLY
-                        ACCESS
-                        <img src='/home/header/arrowBlack.svg' alt=''/>
-                    </button>
+                <div className='flex  gap-6 md:flex-row flex-col items-center'>
+                    <BtnBlue/>
+                    <BtnWhite/>
                 </div>
             </div>
             <div className='self-center justify-center flex relative md:min-h-[580px] min-h-[386px] w-full '>
