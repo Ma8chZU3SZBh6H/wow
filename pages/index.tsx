@@ -29,13 +29,13 @@ const Home: NextPage = () => {
                         additional transfer inside.</h2>
                     <div className='flex gap-6 md:flex-row flex-col'>
                         <button
-                            className='text-12px font-extrabold text-white bg-blue-water px-6 py-4 rounded flex gap-16 justify-between'>REQUEST
+                            className='whitespace-nowrap text-12px font-extrabold text-white bg-blue-water px-6 py-4 rounded flex gap-16 justify-between'>REQUEST
                             EARLY
                             ACCESS
                             <img src='/home/header/arrowWhite.svg' alt=''/>
                         </button>
                         <button
-                            className='text-12px font-extrabold text-blacky-black border-2 border-blacky-black bg-blue-sky px-6 py-4 rounded flex gap-16 justify-between'>REQUEST
+                            className='whitespace-nowrap text-12px font-extrabold text-blacky-black border-2 border-blacky-black bg-blue-sky px-6 py-4 rounded flex gap-16 justify-between'>REQUEST
                             EARLY
                             ACCESS
                             <img src='/home/header/arrowBlack.svg' alt=''/>
