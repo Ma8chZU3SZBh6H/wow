@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Link from "next/link";
-import BtnNotification from "./items/BtnNotification";
+import BtnNotification from "./components/BtnNotification";
 import Socials from "../Socials";
 
 const menus = [

@@ -1,28 +1,30 @@
 import React from 'react';
 import Socials from "../../Socials";
+import CubeTitle from "../components/CubeTitle";
+import DustText from "../components/DustText";
+import Section from "../components/Section";
 
 function Header() {
     return (
-        <section
-            className='lg:grid grid-cols-[auto_1fr_1fr] flex flex-col  py-8 px-6 lg:gap-16 md:gap-24 gap-12 bg-blue-sky lg:pb-32 relative'>
-            <div className='mt-20 flex-col gap-7 lg:flex hidden'>
+        <Section
+            className='lg:grid grid-cols-2 flex flex-col py-8 px-6 lg:gap-16 md:gap-24 gap-12 bg-blue-sky lg:pb-32 relative'>
+            <div className=' flex-col gap-7 lg:flex hidden absolute top-28 left-8'>
                 <Socials/>
             </div>
-            <div className='flex flex-col md:gap-12 gap-6 text-12px font-extrabold '>
+            <div className='flex flex-col md:gap-12 gap-6  '>
                 <div className='flex flex-col gap-8'>
-                    <div className='flex gap-2 items-center'>
-                        <div className='w-[9px] h-[9px] bg-blue-water mb-[1px]'></div>
-                        <h4>THE MOST PRIVATE, NON-CUSTODIAL ETHEREUM WALLET</h4>
-                    </div>
+                    <CubeTitle>THE MOST PRIVATE, NON-CUSTODIAL ETHEREUM WALLET</CubeTitle>
                     <h1 className='md:text-72px text-38px font-extrabold'>Reclaim privacy on your Ethereum
                         transfers</h1>
                 </div>
-                <h2 className='text-18px text-blue-dust font-normal '>CoinX hides your financial data by mixing
+                <DustText>
+                    CoinX hides your financial data by mixing
                     transfers with
                     the pool of funds
                     within Blank,
                     ensuring that outward transfers remain anonymous. Your privacy level only goes up with each
-                    additional transfer inside.</h2>
+                    additional transfer inside.
+                </DustText>
                 <div className='flex gap-6 md:flex-row flex-col'>
                     <button
                         className='whitespace-nowrap text-12px font-extrabold text-white bg-blue-water px-6 py-4 rounded flex gap-16 justify-between'>REQUEST
@@ -47,7 +49,7 @@ function Header() {
                     src='/home/header/app.png' alt=''/>
             </div>
             <img className='z-20 absolute bottom-0 right-0 md:w-auto w-1/2' src='/home/header/cubes.svg' alt=''/>
-        </section>
+        </Section>
     );
 }
 
