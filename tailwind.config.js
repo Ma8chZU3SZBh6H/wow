@@ -23,6 +23,7 @@ module.exports = {
                 '12px': '12px',
                 '16px': '16px',
                 '18px': '18px',
+                '20px': '20px',
                 '24px': '24px',
                 '32px': '32px',
                 '38px': '38px',
@@ -31,15 +32,20 @@ module.exports = {
             },
             backgroundImage: {
                 menuImg: "url('/nav/cubesRight.svg'), url('/nav/cubesLeft.svg')",
-                headerImg: "url('/home/header/cubes.svg')"
+                headerImg: "url('/home/header/cubes.svg')",
+                howCubeOneImg: "url('/home/how/CubeOneLeftBottom.svg'), url('/home/how/CubeOneRightTop.svg')",
+                howCubeTwoImg: "url('/home/how/CubeTwoRightTop.svg')",
+                howCubeThreeImg: "url('/home/how/CubeThreeBottomRight.svg'), url('/home/how/CubeThreeLeftTop.svg')",
             },
             backgroundPosition: {
                 menuPos: 'bottom right, bottom left',
-                headerPos: 'bottom right'
+                headerPos: 'bottom right',
+                howCubeOnePos: 'bottom left, top right',
+                howCubeTwoPos: 'top 60px right ',
+                howCubeThreePos: 'bottom right, left 40px top '
             },
             backgroundSize: {
                 menuSize: '33%, 33%',
-
             }
         },
     },
