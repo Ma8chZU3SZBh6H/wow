@@ -1,6 +1,6 @@
 import React from 'react';
-import Section from "../components/Section";
-import SectionTitleWithCube from "../components/SectionTitleWithCube";
+import Section from "../../components/home/Section";
+import SectionTitleWithCube from "../../components/home/SectionTitleWithCube";
 
 const adventages = [
     {
@@ -23,7 +23,7 @@ const adventages = [
     }
 ]
 
-function Index({}: {}) {
+function What({}: {}) {
     return (
         <Section className='flex flex-col md:gap-12 gap-6'>
             <div className='grid grid-cols-[minmax(208.5px,1fr)_auto_1fr] gap-8 items-end'>
@@ -47,4 +47,4 @@ function Index({}: {}) {
     );
 }
 
-export default Index;
+export default What;

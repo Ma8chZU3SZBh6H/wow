@@ -9,7 +9,7 @@ const menus = [
         href: '/'
     },
     {
-        title: 'How It Works',
+        title: 'What It Works',
         href: '/'
     },
     {
