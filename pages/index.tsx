@@ -9,6 +9,8 @@ import How from "../segments/Home/How";
 import Privacy from "../segments/Home/Privacy";
 import Security from "../segments/Home/Security";
 import Option from "../segments/Home/Option";
+import Utility from "../segments/Home/Utility";
+
 
 const Home: NextPage = () => {
     return (
@@ -24,7 +26,7 @@ const Home: NextPage = () => {
             <Privacy/>
             <Security/>
             <Option/>
-
+            <Utility/>
         </main>
     )
 }
