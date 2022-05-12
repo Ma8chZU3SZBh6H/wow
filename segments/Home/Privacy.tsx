@@ -21,7 +21,7 @@ function Privacy() {
                 <CheckedTitle>Partial Withdraw</CheckedTitle>
             </div>
         </>} img={<>
-            <img className='max-h-[613px]' src='/home/security/app.png' alt=''/>
+            <img className='max-h-[613px]' src='/home/privacy/app.png' alt=''/>
         </>}/>
     );
 }
