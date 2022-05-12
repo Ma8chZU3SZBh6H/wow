@@ -3,12 +3,12 @@ import SectionTitleWithCube from "../../components/Home/SectionTitleWithCube";
 import DustText from "../../components/Home/DustText";
 import BtnBlue from "../../components/Home/BtnBlue";
 import BtnWhite from "../../components/Home/BtnWhite";
-import Section from "../../components/Home/Section";
+import SectionCentered from "../../components/Home/SectionCentered";
 
 function Option() {
     return (
-        <Section
-            className='bg-optionCubeImg bg-optionCubeSize bg-optionCubePos bg-no-repeat bg-lacky-blacky text-white lg:text-center py-28 flex flex-col gap-10 lg:items-center'>
+        <SectionCentered
+            className='bg-optionCubeImg bg-optionCubeSize bg-optionCubePos bg-no-repeat bg-lacky-blacky text-white'>
             <div className='flex flex-col gap-4'>
                 <SectionTitleWithCube cube='YOUR OPTION TO GO COINX'
                                       title='If given a choice: do you reveal your identity or remain anonymous?'
@@ -22,7 +22,7 @@ function Option() {
                 <BtnBlue/>
                 <BtnWhite dark={true}/>
             </div>
-        </Section>
+        </SectionCentered>
     );
 }
 
