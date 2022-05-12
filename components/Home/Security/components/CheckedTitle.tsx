@@ -1,12 +1,12 @@
 import React from 'react';
 
-function CubeTitle({children}: { children: string }) {
+function CheckedTitle({children}: { children: string }) {
     return (
         <div className='flex gap-2 items-center'>
-            <div className='w-[9px]  h-[9px] bg-blue-water mb-[1px]'></div>
+            <img src='/home/security/checkmark.svg' alt=''/>
             <h4 className='text-12px font-bold'>{children}</h4>
         </div>
     );
 }
 
-export default CubeTitle;
+export default CheckedTitle;

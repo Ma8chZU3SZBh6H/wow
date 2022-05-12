@@ -17,7 +17,7 @@ const menus = [
         href: '/'
     },
     {
-        title: 'Security',
+        title: 'security',
         href: '/'
     },
     {
