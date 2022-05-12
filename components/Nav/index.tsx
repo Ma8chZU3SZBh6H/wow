@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Link from "next/link";
 import BtnNotification from "./items/BtnNotification";
+import Socials from "../Socials";
 
 const menus = [
     {
@@ -25,13 +26,6 @@ const menus = [
     },
 ]
 
-const socials = [
-    '/nav/m.svg',
-    '/nav/github.svg',
-    '/nav/twitter.svg',
-    '/nav/plane.svg',
-    '/nav/linkedin.svg'
-]
 
 function Nav() {
 
@@ -56,26 +50,27 @@ function Nav() {
                     </div>
                 </div>
             </nav>
-            {open && <div className='absolute lg:hidden top-0 left-0 min-h-screen w-screen grid grid-rows-[auto_1fr]'>
-                <div
-                    className=' bg-white w-screen p-7 pb-20 flex flex-col gap-14 bg-menuImg bg-menuPos bg-menuSize bg-no-repeat '>
-                    <div className='flex justify-between  '>
-                        <h2 className='text-blacky-black font-extrabold text-24px '>COINX</h2>
-                        <button onClick={openHandler}>
-                            <img src='/nav/x.svg' alt=''/>
-                        </button>
-                    </div>
+            {open &&
+                <div className='absolute z-50 lg:hidden top-0 left-0 min-h-screen w-screen grid grid-rows-[auto_1fr]'>
                     <div
-                        className='flex flex-col gap-10 text-center text-16px md:text-32px font-extrabold text-blue-dust p-7 md:px-36'>
-                        {menus.map(({href, title}, index) => <Link key={index} href={href}>{title}</Link>)}
+                        className=' bg-white w-screen p-7 pb-20 flex flex-col gap-14 bg-menuImg bg-menuPos bg-menuSize bg-no-repeat '>
+                        <div className='flex justify-between  '>
+                            <h2 className='text-blacky-black font-extrabold text-24px '>COINX</h2>
+                            <button onClick={openHandler}>
+                                <img src='/nav/x.svg' alt=''/>
+                            </button>
+                        </div>
+                        <div
+                            className='flex flex-col gap-10 text-center text-16px md:text-32px font-extrabold text-blue-dust p-7 md:px-36'>
+                            {menus.map(({href, title}, index) => <Link key={index} href={href}>{title}</Link>)}
+                        </div>
+                        <BtnNotification/>
+                        <div className='flex justify-between mx-7 md:mx-36 flex-wrap gap-2 items-center justify-center'>
+                            <Socials/>
+                        </div>
                     </div>
-                    <BtnNotification/>
-                    <div className='flex justify-between mx-7 md:mx-36 flex-wrap gap-2 items-center justify-center'>
-                        {socials.map((value, index) => <img key={index + 'aa'} src={value} alt=''/>)}
-                    </div>
-                </div>
-                <div className='bg-black/30'></div>
-            </div>}
+                    <div className='bg-black/30'></div>
+                </div>}
         </>
     );
 }
