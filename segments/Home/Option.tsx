@@ -8,7 +8,7 @@ import SectionCentered from "../../components/Home/SectionCentered";
 function Option() {
     return (
         <SectionCentered
-            className='bg-optionCubeImg bg-optionCubeSize bg-optionCubePos bg-no-repeat bg-lacky-blacky text-white'>
+            className='bg-optionCubeImg bg-optionCubeSize bg-optionCubePos bg-no-repeat bg-lacky-blacky text-white py-28'>
             <div className='flex flex-col gap-4'>
                 <SectionTitleWithCube cube='YOUR OPTION TO GO COINX'
                                       title='If given a choice: do you reveal your identity or remain anonymous?'

@@ -11,7 +11,7 @@ function SectionTitleWithCube({
     return (
         <div className={`flex-col flex md:gap-6 gap-3 ${center ? 'lg:items-center' : ''}`}>
             <CubeTitle>{cube}</CubeTitle>
-            <SectionTitle className={`${noWrap ? 'whitespace-nowrap' : ''}`}>{title}</SectionTitle>
+            <SectionTitle className={`${noWrap ? 'md:whitespace-nowrap' : ''}`}>{title}</SectionTitle>
         </div>
     );
 }

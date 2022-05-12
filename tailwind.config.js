@@ -15,7 +15,8 @@ module.exports = {
                 'blue-sky': '#E7F1FB',
                 'blue-cloud': '#D9E9FA',
                 'blue-water': '#1673FF',
-                'grey-dust': '#90A3BF'
+                'grey-dust': '#90A3BF',
+                'faded-line': '#BFCCE0'
             },
             fontFamily: {
                 'sequel': ['Sequel', ...defaultTheme.fontFamily.sans],
@@ -23,11 +24,13 @@ module.exports = {
             },
             fontSize: {
                 '12px': '12px',
+                '14px': '14px',
                 '16px': '16px',
                 '18px': '18px',
                 '20px': '20px',
                 '24px': '24px',
                 '32px': '32px',
+                '36px': '36px',
                 '38px': '38px',
                 '58px': '58px',
                 '72px': '72px',
