@@ -16,11 +16,13 @@ module.exports = {
                 'blue-cloud': '#D9E9FA',
                 'blue-water': '#1673FF',
                 'grey-dust': '#90A3BF',
-                'faded-line': '#BFCCE0'
+                'faded-line': '#BFCCE0',
+                'faded-cube': '#EAEEF2'
             },
             fontFamily: {
                 'sequel': ['Sequel', ...defaultTheme.fontFamily.sans],
-                'sans': ['Open Sans', ...defaultTheme.fontFamily.sans]
+                'sans': ['Open Sans', ...defaultTheme.fontFamily.sans],
+                'inter': ['Inter', ...defaultTheme.fontFamily.sans],
             },
             fontSize: {
                 '12px': '12px',
@@ -38,10 +40,15 @@ module.exports = {
             backgroundImage: {
                 menuImg: "url('/nav/cubesRight.svg'), url('/nav/cubesLeft.svg')",
                 headerImg: "url('/home/header/cubes.svg')",
-                howCubeOneImg: "url('/home/how/CubeOneLeftBottom.svg'), url('/home/how/CubeOneRightTop.svg')",
-                howCubeTwoImg: "url('/home/how/CubeTwoRightTop.svg')",
-                howCubeThreeImg: "url('/home/how/CubeThreeBottomRight.svg'), url('/home/how/CubeThreeLeftTop.svg')",
+                howCubeOneImg: "url('/home/what/CubeOneLeftBottom.svg'), url('/home/how/CubeOneRightTop.svg')",
+                howCubeTwoImg: "url('/home/what/CubeTwoRightTop.svg')",
+                howCubeThreeImg: "url('/home/what/CubeThreeBottomRight.svg'), url('/home/how/CubeThreeLeftTop.svg')",
                 optionCubeImg: "url('/home/option/cubes.svg')",
+                tableTitleCubeImg: "url('/home/table/titleCubeBottomRight.svg')",
+                tableTitleCubeTwoImg: "url('/home/table/titleCubeRightTop.svg')",
+                tableTCubeImg: "url('/home/table/tCubeBottomRight.svg')",
+                tableMCubeImg: "url('/home/table/mCubeBottomLeft.svg')",
+                roadmapCubeImg: "url('/home/roadmap/cube.svg')",
             },
             backgroundPosition: {
                 menuPos: 'bottom right, bottom left',
@@ -50,6 +57,11 @@ module.exports = {
                 howCubeTwoPos: 'top 60px right ',
                 howCubeThreePos: 'bottom right, left 40px top ',
                 optionCubePos: 'bottom',
+                tableTitleCubePos: 'bottom right',
+                tableTitleCubeTwoPos: 'top right',
+                tableTCubePos: 'bottom right',
+                tableMCubePos: 'bottom left',
+                roadmapCubePos: 'bottom right'
             },
             backgroundSize: {
                 menuSize: '33%, 33%',

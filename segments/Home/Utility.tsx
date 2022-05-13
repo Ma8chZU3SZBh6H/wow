@@ -34,7 +34,7 @@ function Utility() {
                 {utilities.map(({text, icon}, index) => <div key={index + 'sef'}
                                                              className='flex flex-col gap-2 items-start'>
                     <img className='h-[28px]' src={icon} alt=''/>
-                    <div className='font-bold text-16px'>{text}</div>
+                    <div className='font-bold text-16px font-inter'>{text}</div>
                 </div>)}
 
             </div>
