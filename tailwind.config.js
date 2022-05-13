@@ -17,7 +17,8 @@ module.exports = {
                 'blue-water': '#1673FF',
                 'grey-dust': '#90A3BF',
                 'faded-line': '#BFCCE0',
-                'faded-cube': '#EAEEF2'
+                'faded-cube': '#EAEEF2',
+                'grey-foot': '#74849B'
             },
             fontFamily: {
                 'sequel': ['Sequel', ...defaultTheme.fontFamily.sans],
@@ -25,6 +26,7 @@ module.exports = {
                 'inter': ['Inter', ...defaultTheme.fontFamily.sans],
             },
             fontSize: {
+                '10px': '10px',
                 '12px': '12px',
                 '14px': '14px',
                 '16px': '16px',
@@ -49,6 +51,9 @@ module.exports = {
                 tableTCubeImg: "url('/home/table/tCubeBottomRight.svg')",
                 tableMCubeImg: "url('/home/table/mCubeBottomLeft.svg')",
                 roadmapCubeImg: "url('/home/roadmap/cube.svg')",
+                peopleCubesImg: "url('/home/people/cubeland.svg')",
+                oceanCubesImg: "url('/home/ocean/cubeland.svg')",
+                footerCubesImg: "url('/home/footer/cubeland.svg')",
             },
             backgroundPosition: {
                 menuPos: 'bottom right, bottom left',
@@ -61,11 +66,15 @@ module.exports = {
                 tableTitleCubeTwoPos: 'top right',
                 tableTCubePos: 'bottom right',
                 tableMCubePos: 'bottom left',
-                roadmapCubePos: 'bottom right'
+                roadmapCubePos: 'bottom right',
+                peopleCubesPos: 'top',
+                footerCubesPos: 'top left 27px',
             },
             backgroundSize: {
                 menuSize: '33%, 33%',
                 optionCubeSize: '100%',
+                '100': '100%',
+                footerCubesSize: '50%',
             }
         },
     },

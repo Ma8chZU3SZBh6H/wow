@@ -13,12 +13,11 @@ import Utility from "../segments/Home/Utility";
 import Finance from "../segments/Home/Finance";
 import Table from "../segments/Home/Table";
 import Market from "../segments/Home/market";
+import Roadmap from "../segments/Home/Roadmap";
+import People from "../segments/Home/People";
+import Ocean from "../segments/Home/Ocean";
 import Section from "../components/Home/Section";
-import SectionTitleWithCube from "../components/Home/SectionTitleWithCube";
-import HorizontalLine from "../components/Home/roadmap/HorizontalLine";
-import CubemarkTitle from "../components/Home/roadmap/CubemarkTitle";
-import CubeBlock from "../components/Home/roadmap/CubeBlock";
-import VerticleCubeGroup from "../components/Home/roadmap/VerticleCubeGroup";
+import DustText from "../components/Home/DustText";
 
 
 const Home: NextPage = () => {
@@ -39,92 +38,45 @@ const Home: NextPage = () => {
             <Finance/>
             <Table/>
             <Market/>
-            <Section className='flex flex-col gap-10'>
-                <SectionTitleWithCube cube='ROADMAP'
-                                      title='A roadmap that delivers instant functionality, with more to come.'/>
-
-                <div className=' grid-1fr lg:hidden grid'>
-                    <div className='flex flex-col  gap-x-8 '>
-                        <VerticleCubeGroup year='2021 Q1' title='Coinx V2' progress={30}>
-                            <CubeBlock>
-                                <CubemarkTitle done={true}>Web extension as Tornado.Cash relayer</CubemarkTitle>
-                                <CubemarkTitle>Proof-of-funds compliance key </CubemarkTitle>
-                            </CubeBlock>
-                            <CubeBlock>
-                                <CubemarkTitle>Public Security Audit</CubemarkTitle>
-                            </CubeBlock>
-                        </VerticleCubeGroup>
-                        <VerticleCubeGroup year='2021 Q2' title='CoinX V1'>
-                            <CubeBlock>
-                                <CubemarkTitle>ERC-20 Support</CubemarkTitle>
-                                <CubemarkTitle>Automatic deposits</CubemarkTitle>
-                                <CubemarkTitle>One time address</CubemarkTitle>
-                                <CubemarkTitle>Referral system</CubemarkTitle>
-                            </CubeBlock>
-                        </VerticleCubeGroup>
-                        <VerticleCubeGroup year='2021 Q3' title=''>
-                            <CubeBlock>
-                                <CubemarkTitle>CoinX functionality integration with Metamask snaps
-                                    PlugIn. </CubemarkTitle>
-                                <CubemarkTitle>Tor integration</CubemarkTitle>
-                            </CubeBlock>
-                        </VerticleCubeGroup>
-                        <VerticleCubeGroup year='2021 Q4' title='CoinX V3'>
-                            <CubeBlock>
-                                <CubemarkTitle>Partial withdrawal </CubemarkTitle>
-                                <CubemarkTitle>Unique pooling reward system</CubemarkTitle>
-                            </CubeBlock>
-                        </VerticleCubeGroup>
-                    </div>
-                </div>
-
-                <div className='lg:grid hidden grid-cols-4 gap-y-6'>
-                    <div className='text-24px font-bold'>2021 Q1</div>
-                    <div className='text-24px font-bold'>2021 Q2</div>
-                    <div className='text-24px font-bold'>2021 Q3</div>
-                    <div className='text-24px font-bold'>2021 Q4</div>
-                    <HorizontalLine progress={30} first={true}/>
-                    <HorizontalLine/>
-                    <HorizontalLine/>
-                    <HorizontalLine/>
-                    <div className='col-span-4 grid grid-cols-4 gap-4'>
-                        <div className='flex flex-col gap-4'>
-                            <h4 className='font-inter text-16px font-semibold'>CoinX V1 </h4>
-                            <CubeBlock>
-                                <CubemarkTitle done={true}>Web extension as Tornado.Cash relayer</CubemarkTitle>
-                                <CubemarkTitle>Proof-of-funds compliance key </CubemarkTitle>
-                            </CubeBlock>
-                            <CubeBlock>
-                                <CubemarkTitle>Public Security Audit</CubemarkTitle>
-                            </CubeBlock>
+            <Roadmap/>
+            <People/>
+            <Partners/>
+            <div>
+                <Ocean/>
+                <Section
+                    className='bg-lacky-blacky text-white py-28 flex flex-col gap-16 bg-footerCubesImg bg-footerCubesPos bg-100 bg-no-repeat bg-footerCubesSize'>
+                    <div className='md:grid flex flex-col grid-cols-[2fr_1fr_1fr_1fr] gap-16'>
+                        <div className='flex flex-col gap-8 lg:col-span-1 md:col-span-4'>
+                            <h2 className=' font-extrabold text-24px'>COINX</h2>
+                            <DustText color='text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua.</DustText>
                         </div>
-                        <div className='flex flex-col gap-4'>
-                            <h4 className='font-inter text-16px font-semibold'>Coinx V2</h4>
-                            <CubeBlock>
-                                <CubemarkTitle>ERC-20 Support</CubemarkTitle>
-                                <CubemarkTitle>Automatic deposits</CubemarkTitle>
-                                <CubemarkTitle>One time address</CubemarkTitle>
-                                <CubemarkTitle>Referral system</CubemarkTitle>
-                            </CubeBlock>
+                        <div className='flex flex-col gap-8'>
+                            <h2 className=' font-extrabold text-12px text-grey-foot'>COINX</h2>
+                            <DustText color='text-white'>Privacy Policy</DustText>
+                            <DustText color='text-white'>Terms & Conditions</DustText>
                         </div>
-                        <div className='flex flex-col gap-4'>
-                            <h4 className='font-inter text-16px font-semibold min-h-[24px]'></h4>
-                            <CubeBlock>
-                                <CubemarkTitle>CoinX functionality integration with Metamask snaps
-                                    PlugIn. </CubemarkTitle>
-                                <CubemarkTitle>Tor integration</CubemarkTitle>
-                            </CubeBlock>
+                        <div className='flex flex-col gap-8'>
+                            <h2 className=' font-extrabold text-12px text-grey-foot'>SOCIALS</h2>
+                            <DustText color='text-white'>Medium</DustText>
+                            <DustText color='text-white'>Github</DustText>
+                            <DustText color='text-white'>Privacy Policy</DustText>
+                            <DustText color='text-white'>Twitter</DustText>
+                            <DustText color='text-white'>Telegram</DustText>
+                            <DustText color='text-white'>LinkedIn</DustText>
                         </div>
-                        <div className='flex flex-col gap-4'>
-                            <h4 className='font-inter text-16px font-semibold'>CoinX V3</h4>
-                            <CubeBlock>
-                                <CubemarkTitle>Partial withdrawal </CubemarkTitle>
-                                <CubemarkTitle>Unique pooling reward system</CubemarkTitle>
-                            </CubeBlock>
+                        <div className='flex flex-col gap-8'>
+                            <h2 className=' font-extrabold text-12px text-grey-foot'>COINX</h2>
+                            <DustText color='text-white'>hello@coinx.com</DustText>
                         </div>
                     </div>
-                </div>
-            </Section>
+                    <div className='col-span-4'>
+                        <DustText color='text-white'>Copyright © CoinX 2020. All rights reserved.</DustText>
+                    </div>
+                </Section>
+            </div>
         </main>
     )
 }

@@ -51,7 +51,7 @@ function Nav() {
                 </div>
             </nav>
             {open &&
-                <div className='absolute z-50 lg:hidden top-0 left-0 min-h-screen w-screen grid grid-rows-[auto_1fr]'>
+                <div className='fixed z-50 lg:hidden top-0 left-0 min-h-screen w-screen grid grid-rows-[auto_1fr]'>
                     <div
                         className=' bg-white w-screen p-7 pb-20 flex flex-col gap-14 bg-menuImg bg-menuPos bg-menuSize bg-no-repeat '>
                         <div className='flex justify-between  '>
