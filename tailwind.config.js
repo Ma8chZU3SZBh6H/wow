@@ -75,6 +75,18 @@ module.exports = {
                 optionCubeSize: '100%',
                 '100': '100%',
                 footerCubesSize: '50%',
+            },
+            animation: {
+                fadeIn: "fadeIn 3s ease-in forwards"
+            },
+            keyframes: {
+                fadeIn: {
+                    "0%": {opacity: 0},
+                    "100%": {opacity: 1}
+                }
+            },
+            variants: {
+                animation: ["motion-safe"]
             }
         },
     },

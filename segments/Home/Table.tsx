@@ -2,6 +2,7 @@ import React from 'react';
 import Section from "../../components/Home/Section";
 import TableTextItem from "../../components/Home/table/TableTextItem";
 import TableCheckboxItem from "../../components/Home/table/TableCheckboxItem";
+import Fade from "../../components/Fade";
 
 const tableTitles = [
     {
@@ -81,28 +82,30 @@ const tableItems = [
 
 function Table() {
     return (
-        <Section className='grid grid-cols-1'>
-            <div className='grid grid-cols-[1fr_1fr_1fr_1fr]'>
-                {tableTitles.map(({title, className}, index, array) =>
-                    <div
-                        className={` lg:p-10 md:px-10 px-3 py-6 font-extrabold lg:text-36px md:text-24px text-16px grid items-center justify-center border-b-[1px] border-faded-line ${className}`}
-                        key={index + 'fes'}>
+        <Fade>
+            <Section className='grid grid-cols-1'>
+                <div className='grid grid-cols-[1fr_1fr_1fr_1fr]'>
+                    {tableTitles.map(({title, className}, index, array) =>
                         <div
-                            className={`${index > 0 ? 'md:transform-none md:w-auto transform -rotate-[90deg] translate-y-[200%] sm:-rotate-[60deg] w-[1px]' : ''}`}>
-                            {title}
+                            className={` lg:p-10 md:px-10 px-3 py-6 font-extrabold lg:text-36px md:text-24px text-16px grid items-center justify-center border-b-[1px] border-faded-line ${className}`}
+                            key={index + 'fes'}>
+                            <div
+                                className={`${index > 0 ? 'md:transform-none md:w-auto transform -rotate-[90deg] translate-y-[200%] sm:-rotate-[60deg] w-[1px]' : ''}`}>
+                                {title}
+                            </div>
                         </div>
-                    </div>
-                )}
-                {tableItems.map(({c, t, m, title}, index, array) =>
-                    <>
-                        <TableTextItem array={array} index={index} title={title}/>
-                        <TableCheckboxItem array={array} index={index} value={c}/>
-                        <TableCheckboxItem array={array} index={index} value={m} border={true} bg={true}/>
-                        <TableCheckboxItem array={array} index={index} value={t} bg={true} tCube={true}/>
-                    </>
-                )}
-            </div>
-        </Section>
+                    )}
+                    {tableItems.map(({c, t, m, title}, index, array) =>
+                        <>
+                            <TableTextItem array={array} index={index} title={title}/>
+                            <TableCheckboxItem array={array} index={index} value={c}/>
+                            <TableCheckboxItem array={array} index={index} value={m} border={true} bg={true}/>
+                            <TableCheckboxItem array={array} index={index} value={t} bg={true} tCube={true}/>
+                        </>
+                    )}
+                </div>
+            </Section>
+        </Fade>
     );
 }
 
