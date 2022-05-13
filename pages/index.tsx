@@ -12,6 +12,7 @@ import Option from "../segments/Home/Option";
 import Utility from "../segments/Home/Utility";
 import Finance from "../segments/Home/Finance";
 import Table from "../segments/Home/Table";
+import Market from "../segments/Home/market";
 
 
 const Home: NextPage = () => {
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
             <Utility/>
             <Finance/>
             <Table/>
+            <Market/>
         </main>
     )
 }
