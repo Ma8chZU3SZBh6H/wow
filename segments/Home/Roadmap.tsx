@@ -11,7 +11,7 @@ function Roadmap() {
     return (
         <Fade>
             <Section className='relative flex flex-col gap-10'>
-                <div id='roadmap' className='absolute top-0 scroll-mt-[15vw]'></div>
+                <div id='roadmap' className='absolute top-0 scroll-mt-[150px]'></div>
                 <SectionTitleWithCube cube='ROADMAP'
                                       title='A roadmap that delivers instant functionality, with more to come.'/>
 

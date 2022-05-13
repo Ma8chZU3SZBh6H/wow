@@ -7,7 +7,8 @@ import Fade from "../../components/Fade";
 function How() {
     return (
         <Fade>
-            <SectionWithImgAndText id='how' reverse={true} text={<>
+            <SectionWithImgAndText reverse={true} text={<>
+                <div id='how' className='absolute top-0 scroll-mt-[150px]'></div>
                 <SectionTitleWithCube cube='HOW DOES IT WORK?'
                                       title='The first-ever Chrome extension that gives you an untraceable identity.'/>
                 <DustText>

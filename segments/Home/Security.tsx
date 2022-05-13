@@ -8,7 +8,8 @@ import Fade from "../../components/Fade";
 function Security() {
     return (
         <Fade>
-            <SectionWithImgAndText id='security' reverse={true} text={<>
+            <SectionWithImgAndText reverse={true} text={<>
+                <div id='security' className='absolute top-0 scroll-mt-[150px]'></div>
                 <SectionTitleWithCube cube='100% SECURE'
                                       title='Protected by smart contracts that only you have the access to.'/>
                 <DustText>

@@ -22,7 +22,7 @@ import Nav from "../segments/Nav";
 const Home: NextPage = () => {
     return (
         <main className='font-sans text-blacky-black flex flex-col lg:gap-28 gap-16 '>
-            <header className='md:pt-28 pt-26 bg-blue-sky'>
+            <header className='md:pt-28 md:pt-26 pt-28 bg-blue-sky'>
                 <Nav/>
                 <Header/>
             </header>

@@ -7,7 +7,8 @@ import Fade from "../../components/Fade";
 function Why() {
     return (
         <Fade>
-            <SectionWithImgAndText id='blank' text={<>
+            <SectionWithImgAndText text={<>
+                <div id='blank' className='absolute top-0 scroll-mt-[150px]'></div>
                 <SectionTitleWithCube cube='WHY GO COINX?' title='You’re not anonymous, even on blockchain.'/>
                 <DustText>
                     Even before you connect your wallet, your IP is exposed. Once you connect, your wallet address

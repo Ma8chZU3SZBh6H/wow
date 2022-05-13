@@ -8,7 +8,8 @@ import Fade from "../../components/Fade";
 function Privacy() {
     return (
         <Fade>
-            <SectionWithImgAndText id='mask' text={<>
+            <SectionWithImgAndText text={<>
+                <div id='mask' className='absolute top-0 scroll-mt-[150px]'></div>
                 <SectionTitleWithCube cube='PRIVACY BY DESIGN'
                                       title='Metamask x Tornado Cash'/>
                 <DustText>

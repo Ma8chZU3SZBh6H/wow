@@ -5,23 +5,23 @@ import Socials from "../components/Socials";
 
 const menus = [
     {
-        title: 'Why Blank',
+        title: 'WHY BLANK',
         href: '#blank'
     },
     {
-        title: 'How It Works',
+        title: 'HOW IT WORKS',
         href: '#how'
     },
     {
-        title: 'Metamask',
+        title: 'METAMASK',
         href: '#mask'
     },
     {
-        title: 'security',
+        title: 'SECURITY',
         href: '#security'
     },
     {
-        title: 'Roadmap',
+        title: 'ROADMAP',
         href: '#roadmap'
     },
 ]
